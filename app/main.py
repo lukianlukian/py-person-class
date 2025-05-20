@@ -19,7 +19,5 @@ def create_person_list(people: list) -> list:
             peep.wife = Person.people[peopl["wife"]]
         if "husband" in peopl and peopl["husband"] is not None:
             peep.husband = Person.people[peopl["husband"]]
-        else:
-            peep.husband = None
 
     return [Person.people[person["name"]] for person in people]
